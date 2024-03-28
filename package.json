@@ -14,7 +14,7 @@
     "start:build": "tsc --build && pm2 start ecosystem.config.json --no-daemon",
     "compile": "tsc --build",
     "compile:watch": "tsc --build --watch",
-    "pre:dev": "cross-env NODE_ENV=production nodemon --experimental-modules --es-module-specifier-resolution=node dist/index.js",
+    "pre:dev": "cross-env NODE_ENV=development nodemon --experimental-modules --es-module-specifier-resolution=node dist/index.js",
     "dev": "concurrently --kill-others \"npm run compile:watch\" \"npm run pre:dev\""
   },
   "devDependencies": {
