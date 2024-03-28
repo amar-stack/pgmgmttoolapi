@@ -34,7 +34,7 @@ const config = {
   env: envVars.NODE_ENV,
   port: envVars.PORT,
   mongoose: {
-    url: envVars.MONGODB_URL + (envVars.NODE_ENV === 'test' ? '-test' : ''),
+    url: 'mongodb+srv://amarnathvalleti:yxcscFa9SvEMCFkq@pgmgmttool.j2jmfvb.mongodb.net/?retryWrites=true&w=majority&appName=Pgmgmttool' + (envVars.NODE_ENV === 'test' ? '-test' : ''),
     options: {
       useCreateIndex: true,
       useNewUrlParser: true,
